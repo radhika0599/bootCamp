@@ -15,6 +15,13 @@ public class Post {
 					+ "    \"name\": \"morpheus\",\r\n"
 					+ "    \"job\": \"leader\"\r\n"
 					+ "}").when().post("https://reqres.in/api/users").then().log().all().extract().response();
+	
+	
+	int statusCode=response.getStatusCode();
+	  System.out.println("status code is "+statusCode);
+	  
+	  String statusLine=response.getStatusLine();
+	  System.out.println("status line is "+statusLine);
 
   }
 }

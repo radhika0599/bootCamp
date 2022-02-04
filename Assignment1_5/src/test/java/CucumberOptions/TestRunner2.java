@@ -7,10 +7,10 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="/Assignment1_5/src/test/java/Features/Method4.feature",
-		glue="/Assignment1_5/src/test/java/StepDefinition/Methods.java",
-		tags="@post"
+		features="/Assignment1_5/src/test/java/Features/NegativeScenario5.feature",
+		glue="/Assignment1_5/src/test/java/StepDefinition/Negative.java",
+		tags="@Negative"
 		)
-public class TestRunner1 {
+public class TestRunner2 {
 
 }

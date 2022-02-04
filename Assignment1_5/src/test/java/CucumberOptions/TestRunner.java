@@ -7,9 +7,12 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="src/test/java/Features",
-		glue="StepDefinition",
-		tags="@Negative"
+		features="/Assignment1_5/src/test/java/Features/AssignmentBDD.feature",
+		glue="/Assignment1_5/src/test/java/StepDefinition/StepDefinition.java",
+		tags="@smoke"
+		//monochrome = true
+		//strict = true,
+		//dryRun = false
 		)
 public class TestRunner {
 

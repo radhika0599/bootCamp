@@ -13,5 +13,16 @@ public class get {
 	  response=RestAssured.given().header("Content-Type","application/JSON")
 			  .when().get("https://reqres.in/api/users?page=2").then().log().all().extract().response();
 	  
+	  int statusCode=response.getStatusCode();
+	  System.out.println("status code is "+statusCode);
+	  
+	  
+	  String statusLine=response.getStatusLine();
+	  System.out.println("status line is "+statusLine);
+	  
+	  String id=response.getSessionId();
+	  System.out.println("Session Id is  "+id);
+	  
+	  
   }
 }
